@@ -17,13 +17,15 @@
 		<!-- Don't know if needed another form input for "Student Number"-->
     	<label for="fname">Name and Surname:</label><br>
     	<input type="text" id="fname" name="fname"><br>
-    	<label for="snum">Student Number:</label><br>
-    	<input type="text" id="snum" name="snum"><br>
+	</form>
+	<form>
+    	<label for="snum" >Student Number:  </label><br>
+    	<input type="number" pattern="[0-9]{7,10}" min="1000000" max="9999999999" id="snum" name="snum"><br>
 	</form>
 	<form>
 		<!--Text input for test-->
 		<lable for="q1">Question 1</lable><br>
-		<input type="test" id="q1" name="q1"><br>
+		<input type="text" id="q1" name="q1"><br>
 	</form>
 	<form>
 		<!-- Radio button input -->
@@ -57,6 +59,15 @@
 			<option value="an3">Answer 3</option>
 			<option value="an4">Answer 4</option>
 		</select>
+	</form>
+	<form>
+		<lable for="year">When did streaming first start? (between 2000 2015):<br></label>
+		<input type="range" id="year" name="year" min="2000" max="2015">
+	</form>
+	
+	<form action="test.txt">
+		<label for></label>
+
 	</form>
 </body>
 </html>
